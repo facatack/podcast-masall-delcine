@@ -1,0 +1,301 @@
+/*colores
+#e500f0 pink
+#063fbc blue
+#9a20ee violeta
+#ed8f75 salmon
+#3eb8ae verde claro
+#130715 negro
+
+weigth de letras
+200
+400
+800
+
+*/
+
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    background: url(../Images/portada.gif) center fixed;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+    color:#130715 ;
+}
+
+/* trabajo header */
+header{
+    width: 100%;
+    height:20vh;
+
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;   
+
+}
+
+header nav img{
+    max-width: 15rem;
+    margin-left: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-right: 2rem;
+    align-items: center;
+
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+
+
+.redes{
+    
+    font-size: 1.7em;
+    text-decoration: none;
+    color:#e500f0;
+}
+
+.redes:hover{
+    color:#9a20ee;
+}
+
+/*trabajo section*/
+
+.contenedor-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-splash{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-flex{
+    width:500px;
+    height:100px;
+    background: rgba(0,42,136,0.3) ;
+    border-radius: 1rem;
+    border: #3eb8ae solid 1px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2rem;
+    margin: 10%;
+}
+
+
+h1{
+    font-size:15px;
+    text-transform: uppercase; 
+    text-shadow: #3eb8ae 0px 1px 2px;  
+}
+
+audio{
+    width: 100%; 
+    height: 40px;
+}
+
+
+section{
+    width: 100%;
+}
+
+.capitulos{
+    background: #9a20ee;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.ficha{
+    font-size: 1em;
+    background:#e500f0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin:3%;
+    width: 100%;
+    border: #3eb8ae solid 1px;
+    border-radius: 18px;
+    
+}
+
+.titular{
+    width:65%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding:1%;
+    text-align: center;
+}
+
+.descripcion{
+    padding:1%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.ilustracion{
+    width:250px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+
+h2{
+    font-size:30px;
+    margin: 0px;
+
+}
+
+p{
+    font-size: 15px;
+    margin: 0px;
+    line-height: 1.5;
+}
+
+/*trabajo podcast*/
+.podcast {
+    max-width: 250px;
+    background:rgba(0,42,136,0.3);
+    margin: 3%;
+    border-radius: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: #3eb8ae solid 1px;
+    text-align: justify;
+    
+}
+
+.infoPodcast{
+    width: 90%;
+    min-height: 230px;
+    padding:4%;
+    margin:1%;
+}
+.infoPodcast h3 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.tapa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tapa img{
+    width: 86%;
+    margin: 5%;
+    border-radius: 100%;
+    border: #e500f0 solid 0.5px;
+}
+
+.reproductores{
+    width: 95%;
+    margin:0 auto;
+}
+
+footer{
+    background:rgb(0,42,136); 
+    height:10vh;
+    width:100%;
+    padding-top: 2rem;
+    
+}
+
+footer ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+footer ul li{
+    margin-left: 20px;
+}
+
+@media only screen and (max-width:611px){
+    body{
+        background: url(../Images/CineParadiso.jpg) center fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color:#ffffff
+    }
+
+    h1{
+        text-shadow: #e500f0 0px 1px 2px;
+    }
+
+    header nav img{
+        max-width: 8rem;
+        margin-left: 1rem;
+    }
+    
+    header nav ul {
+        display: none;    
+    }
+
+    .card-flex{
+        width:200px;
+        height:50px;
+        background: rgba(0,42,136,0.3) ;
+        border-radius: 1rem;
+        border: #3eb8ae solid 1px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem;
+        margin: 10%;
+    }
+    
+    h1{
+        font-size:10px;
+        text-transform: uppercase;    
+    }
+
+    .audio-primary{
+       height: 50%;
+    }
+
+    .welcome{
+        height: 50vh;
+    }
+}
